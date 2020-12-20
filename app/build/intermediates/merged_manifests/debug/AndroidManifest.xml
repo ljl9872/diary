@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shiyan21"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="记事本"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.shiyan21.ui.login.LoginActivity21"
+            android:label="@string/title_activity_login21" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.shiyan21.Add"
+            android:label="Add" />
+        <activity
+            android:name="com.example.shiyan21.Edit"
+            android:label="Edit" />
+        <activity
+            android:name="com.example.shiyan21.Research"
+            android:label="Research" />
+        <activity
+            android:name="com.example.shiyan21.Picture"
+            android:label="Picture" />
+        <activity android:name="com.example.shiyan21.MainActivity" >
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.shiyan21.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.example.shiyan21.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>
