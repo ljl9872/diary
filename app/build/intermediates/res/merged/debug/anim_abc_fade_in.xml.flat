@@ -1,0 +1,9 @@
+AAPT         ,      ?   ?      
+anim/abc_fade_in "~C:\Users\10105\.gradle\caches\transforms-2\files-2.1\c1210059822c0f4a6a60a6d67e3f9ee5\appcompat-1.2.0\res\anim\abc_fade_in.xml  
+
+9
+android*http://schemas.android.com/apk/res/androidalpha"^
+*http://schemas.android.com/apk/res/androidduration&@android:integer/config_mediumAnimTime"<
+*http://schemas.android.com/apk/res/android	fromAlpha0.0"a
+*http://schemas.android.com/apk/res/androidinterpolator%@android:anim/decelerate_interpolator":
+*http://schemas.android.com/apk/res/androidtoAlpha1.0  
