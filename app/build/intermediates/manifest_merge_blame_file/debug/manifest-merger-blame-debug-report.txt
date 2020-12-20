@@ -1,0 +1,109 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.shiyan21"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:4:5-97
+11-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:4:22-78
+12
+13    <application
+13-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:5:5-44:19
+14        android:allowBackup="true"
+14-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:6:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.3.1] C:\Users\10105\.gradle\caches\transforms-2\files-2.1\2e20aa6327d74cdbe04119328213861c\core-1.3.1\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:7:9-43
+18        android:label="记事本"
+18-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:8:9-28
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:9:9-54
+20        android:supportsRtl="true"
+20-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:10:9-35
+21        android:theme="@style/AppTheme" >
+21-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:11:9-40
+22        <activity
+22-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:12:9-21:20
+23            android:name="com.example.shiyan21.ui.login.LoginActivity21"
+23-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:13:13-53
+24            android:label="@string/title_activity_login21" >
+24-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:14:13-59
+25            <intent-filter>
+25-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:15:13-19:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:16:17-69
+26-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:16:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:18:17-77
+28-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:18:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity
+31-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:22:9-24:35
+32            android:name="com.example.shiyan21.Add"
+32-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:23:13-32
+33            android:label="Add" />
+33-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:24:13-32
+34        <activity
+34-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:25:9-27:36
+35            android:name="com.example.shiyan21.Edit"
+35-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:26:13-33
+36            android:label="Edit" />
+36-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:27:13-33
+37        <activity
+37-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:28:9-30:40
+38            android:name="com.example.shiyan21.Research"
+38-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:29:13-37
+39            android:label="Research" />
+39-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:30:13-37
+40        <activity
+40-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:31:9-32:48
+41            android:name="com.example.shiyan21.Picture"
+41-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:31:19-42
+42            android:label="Picture" />
+42-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:32:13-36
+43        <activity android:name="com.example.shiyan21.MainActivity" >
+43-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:33:9-34:20
+43-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:33:19-47
+44        </activity>
+45
+46        <provider
+46-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:35:9-43:20
+47            android:name="androidx.core.content.FileProvider"
+47-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:37:13-62
+48            android:authorities="com.example.shiyan21.fileprovider"
+48-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:36:13-68
+49            android:exported="false"
+49-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:38:13-37
+50            android:grantUriPermissions="true" >
+50-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:39:13-47
+51            <meta-data
+51-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:40:13-42:54
+52                android:name="android.support.FILE_PROVIDER_PATHS"
+52-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:41:17-67
+53                android:resource="@xml/file_paths" />
+53-->E:\shiyan21\shiyan21\app\src\main\AndroidManifest.xml:42:17-51
+54        </provider>
+55        <provider
+55-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\10105\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+56            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+56-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\10105\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+57            android:authorities="com.example.shiyan21.lifecycle-process"
+57-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\10105\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+58            android:exported="false"
+58-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\10105\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+59            android:multiprocess="true" />
+59-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\10105\.gradle\caches\transforms-2\files-2.1\a897a409ae71baa42757e07a58e10619\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+60    </application>
+61
+62</manifest>
